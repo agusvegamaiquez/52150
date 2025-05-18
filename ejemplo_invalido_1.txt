@@ -1,0 +1,4 @@
+funcion imprimir() {
+escribir("Hola")
+leer(nombre);
+}

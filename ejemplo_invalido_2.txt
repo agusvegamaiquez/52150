@@ -1,0 +1,5 @@
+funcion calcular(x y) {
+x = 5;
+escribir(x);
+}
+

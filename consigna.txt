@@ -1,0 +1,36 @@
+Tarea: Construcción de un Analizador con ANTLR4 y JavaScript
+Tema: 25914 1
+
+Se proporciona una gramática en notación EBNF que describe un lenguaje especifico. Utilizando ANTLR4 con JavaScript, implemente un analizador que procese un archivo de entrada (input.txt) con código fuente escrito en dicho lenguaje.
+<programa> ::= (<funcion>}+
+<funcion>::= "funcion" <identificador> "(" [<parametros>] ")" "(" [<instrucciones>] "7"
+<parametros> ::= <identificador> "," <identificador>)*
+<instrucciones> ::= (<leer> | <escribir> | <asignacion>>
+<leer>::= "leer" "(" <identificador> ")" ";"
+<escribir> ::= "escribir" "(" <expresion> ")" ";"
+<asignacion>::= <identificador> "=" <expresion> ";"
+<expresion> :: <numero> | <cadena> | <identificador>
+<identificador>::= [a-zA-Z][a-zA-Z0-9_]
+<numero> ::= [0-9]+
+<cadena>::="" [^"]
+
+El analizador deberá realizar las siguientes tareas:
+1. Análisis léxico y sintáctico: realizar el análisis léxico y sintáctico sobre el código fuente e informar si la entrada es correcta o contiene errores. En caso de errores, indicar la linea en la que ocurren y la causa del problema.
+2. Tabla de lexemas-tokens: Generar una tabla que contenga los lexemas y sus respectivos tokens reconocidos durante el análisis léxico.
+3. Árbol de análisis sintáctico: Construir y mostrar el árbol de análisis sintáctico concreto de la entrada. Puede
+representarse en formato de texto.
+4. Interpretación: Traducir el código fuente al lenguaje JavaScript y ejecutario como lo haría un intérprete básico.
+El desarrollo debe entregarse cumpliendo las pautas establecidas en el documento Pautas de trabajo para analizador.
+
+
+Ejemplo de Código
+Entrada (lenguaje de la gramatica):
+funcion saludar() {
+escribir("Hola");
+leer(nombre);
+escribir("Tu nombre es: " + nombre);
+Traducido a JavaScript
+function saludar() {
+console.log("Hola");
+let nombre prompt("Ingrese valor:");
+console.log("Tu nombre es:" + nombre);

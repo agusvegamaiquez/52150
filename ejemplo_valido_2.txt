@@ -1,0 +1,5 @@
+funcion sumar(a, b) {
+resultado = a;
+resultado = b;
+escribir(resultado);
+}
