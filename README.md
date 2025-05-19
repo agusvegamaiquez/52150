@@ -62,6 +62,7 @@ code .
 - `ejemplo_valido_2.txt`: Otro archivo de entrada válida.
 - `ejemplo_invalido_1.txt`: Archivo de prueba con error sintáctico (falta punto y coma).
 - `ejemplo_invalido_2.txt`: Archivo de prueba con error sintáctico (parámetros mal escritos).
+- `CustomCalculatorListener.js` permite reconocer las instrucciones principales del lenguaje (leer, escribir, asignación, definición de funciones) y puede adaptarse para traducir automáticamente el código a JavaScript. 
 
 ## Instrucciones para ejecutar
 
@@ -148,9 +149,6 @@ console.log("Tu nombre es: " + nombre);
 
 
 ## Comentarios finales
-
-El listener personalizado implementado en `CustomCalculatorListener.js` permite reconocer las instrucciones principales del lenguaje (leer, escribir, asignación, definición de funciones) y puede adaptarse para traducir automáticamente el código a JavaScript. 
-
 
 Este proyecto fue desarrollado en el marco de la tarea del curso correspondiente al tema 25914_1. 
 
