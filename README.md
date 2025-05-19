@@ -30,16 +30,27 @@ code .
 ## Gramática utilizada (EBNF)
 
 <programa> ::= (<funcion>}+
+
 <funcion>::= "funcion" <identificador> "(" [<parametros>] ")" "(" [<instrucciones>] "7"
+
 <parametros> ::= <identificador> "," <identificador>)*
+
 <instrucciones> ::= (<leer> | <escribir> | <asignacion>>
+
 <leer>::= "leer" "(" <identificador> ")" ";"
+
 <escribir> ::= "escribir" "(" <expresion> ")" ";"
+
 <asignacion>::= <identificador> "=" <expresion> ";"
+
 <expresion> :: <numero> | <cadena> | <identificador>
+
 <identificador>::= [a-zA-Z][a-zA-Z0-9_]
+
 <numero> ::= [0-9]+
+
 <cadena>::="" [^"]
+
 
 ## Archivos incluidos
 
